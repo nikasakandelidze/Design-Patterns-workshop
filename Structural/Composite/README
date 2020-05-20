@@ -1,0 +1,13 @@
+Composite Design pattern:
+
+    Compose objects into a tree structure to represent part-whole hierarchies.
+    It lets client treat individual objects and compositions/groups of these objects the same way.
+    --------------------
+    So some object and group of these kinds of objects implement one and the same interface, and
+    both of them can be treated with the same interface(This actually gives this pattern tree structure).
+
+Components:
+    BaseComponent - actual interface that everything in here implements
+    LeafComponent - actual concrete implementations/working objects of BaseComponent interface
+    Composite - class that extends BaseComponent but also has group of BaseComponents in itself.
+
