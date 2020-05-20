@@ -1,0 +1,12 @@
+Decorator Design pattern:
+
+    Attach additional functionalities to objects dinamically during runtime(no need to recompile),
+    Decorators provide flexible alternative to subclassing for extending object's functionality.
+
+    In OOP decorating object means adding some additional behaviours to some individual object of class
+    without touching other objects of this same class.
+
+    <<<<<<<<Important>>>>>>>>>
+    Why is Decorator pattern even used when you can clearly enrich object's functionality using inheritance?
+    Because using inheritance based enrichment you still need to recompile your program but with decorator pattern
+    everything happens during runtime.(Uala!)
