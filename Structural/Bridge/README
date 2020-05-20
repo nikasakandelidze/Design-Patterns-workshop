@@ -1,0 +1,10 @@
+Bridge design pattern:
+    Main idea of bridge pattern is to decouple abstraction from it's implementation
+    so that they can vary independently.
+
+    Bridge pattern mainly is about preffering composition over inheritance.Implementation details are pushed from
+    current object to the outside world.
+
+    <<<<<<<<Important>>>>>>>>
+Using this pattern we can make some properties of classes exchangeable at runtime
+(without touching class'es internals) just by varying between different Implementations.
