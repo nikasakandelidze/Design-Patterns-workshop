@@ -1,0 +1,6 @@
+Adapter design pattern:
+    Convert the interface of a class into another interface a client expects.
+
+    Adapter technique/pattern lets two classes work together, that won't have been able to in any other compact way.
+
+
