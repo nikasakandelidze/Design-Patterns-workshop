@@ -1,0 +1,13 @@
+Singleton Pattern.
+
+Don't get confused when looking to examples,
+The word samshoblo means motherLand, and in Georgian there are well known words:
+        "Samshoblo rogorc upali ertia qveyanazeda" ---> Basically saying Motherland/samshblo is Singleton for every person in each country.
+
+Definition/Intent:
+        Ensure that class has only one instance and provide global access point to it.
+
+It's important/strictly needed for some classes to have only one instance, and
+all other modules of application go up to this single instance whenever needed.
+
+Restrict class to have only one instance.
