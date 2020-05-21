@@ -1,0 +1,5 @@
+Command Design Pattern:
+    One of the strongest design patterns
+
+    Encapsulate a request as an object, not just to execute this request
+    but also have log history of requests or have an undo operation for every invoked request in timeline and etc.
