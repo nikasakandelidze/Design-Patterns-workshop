@@ -1,0 +1,8 @@
+Facade Design pattern:
+    Provide unified interface to the set of interfaces in a sub-system.
+    Facade just creates higher-level abstraction layer/unifying interface for client, to make subsystem easy to use.
+
+    <<<<Important>>>>
+    It shields client from complexities of internal components,
+    JDBC is example of facade, as we create connection using one method, not knowing anything
+    about inner implementations.
