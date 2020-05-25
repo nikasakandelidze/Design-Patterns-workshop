@@ -1,0 +1,10 @@
+Memento Design pattern:
+       Without braking encapsulation of an object, catch and save it's internal state
+       and later you can restore object to it's previous state easily.
+
+    Undo operation of each and every application is exactly what Memento design pattern is.
+    Each and every time you press ctrl+z, you use Memento design pattern under the hood.
+
+    Memento - actual object representing whole/or part of Originator.
+    Originator  - Main object, whose state you want to snapshot.
+    CareTaker - Never operated or examines memento's internals,
