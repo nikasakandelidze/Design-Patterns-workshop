@@ -1,0 +1,15 @@
+Observer Design pattern:
+
+    Description:
+        Define one to many dependencies for objects, so that when one object changes
+        all others are notified and react to this change in some way.
+
+    Examples:
+        Listeners - in java, all follow this design pattern.
+        In MVC architecture MVC.Controller is usually listener of MVC.Model.
+
+    In this concrete example(src code):
+        Controller ----(listens to)---->Model
+        whenever model changes it notifies all it's listeners about this change.
+        listeners do their job when notified about this change
+        (Controller updates view as soon as gets model change alarm).
