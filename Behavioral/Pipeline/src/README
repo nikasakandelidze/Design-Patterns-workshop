@@ -1,0 +1,6 @@
+PipeLine design pattern.
+
+Step - interface which should be implemented by concrete step implementations
+Pipeline - using this class wire several pipelines of steps together and inputs will go through all these steps.
+
+This design pattern is commonly used when there are several step processings using different data.
