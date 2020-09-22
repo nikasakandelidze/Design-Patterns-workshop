@@ -12,4 +12,8 @@
       Java(with all of it's cool stuff)
      
 ## Main inspiration/resource
-  GOF(Gang Of Four) Design patterns book
+  	GOF(Gang Of Four) Design patterns book
+	
+## Attention
+	My favourite design pattern is written in Behavioural/Template_Method,
+	using Khinkali Dish as an example :) 
