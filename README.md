@@ -1,19 +1,21 @@
-## Design patterns:
-    common solutions to common "architectural" problems while designing applications.
+#
+# **Design patterns Workshop**
+### It is a workshop, piecies of code, mainly concentrated about object oriented design patterns.
+#
+#
+#
+# **What are Design Patterns ?** 
+### _"In software engineering, a software design pattern is a general, reusable solution/template to a commonly occurring problem within a given context in software design"_ 
+#
+#
+# **Design Patterns Discussed here**:
 
-
-## Design Patterns:
-                               1)Creational
-                               2)Behavoiural
-                               3)Structural
-			       4)Concurrency
-
-## Used technologies: 
-      Java(with all of it's cool stuff)
-     
-## Main inspiration/resource
-  	GOF(Gang Of Four) Design patterns book
+###  - Creational
+###  - Behavoiural
+###  - Structural
+###  - Concurrency ( custom )
+#
+#
+# **Main inspiration/resource**
+###  _"Design Patterns: Elements of Reusable Object-Oriented Software"_
 	
-## Attention
-	My favourite design pattern is written in Behavioural/Template_Method,
-	using Khinkali Dish as an example :) 
