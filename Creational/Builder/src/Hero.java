@@ -7,8 +7,31 @@ public class Hero {
     private final Integer age;
     private final Integer numWeapons;
 
+    public String getName() {
+        return name;
+    }
 
-    //!!!!!!!!!!!!!!!!!!!BAD!!!!!!!!!!!!!!!!!!!!!!
+    public String getSurName() {
+        return surName;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public Integer getNumWeapons() {
+        return numWeapons;
+    }
+
+//!!!!!!!!!!!!!!!!!!!BAD!!!!!!!!!!!!!!!!!!!!!!
 //    public Hero(String name, String surName, Integer height, Integer weight, Integer age, Integer numWeapons) {
 //        this.name = name;
 //        this.surName = surName;
@@ -18,48 +41,72 @@ public class Hero {
 //        this.numWeapons = numWeapons;
 //    }
 
-    private Hero(Builder builder){
-        age = builder.age;
-        height = builder .height;
-        name = builder.name;
-        weight = builder.weight;
-        numWeapons = builder.numWeapons;
-        surName = builder.surName;
+    private Hero(HeroBuilderImpl heroBuilderImpl){
+        age = heroBuilderImpl.age;
+        height = heroBuilderImpl.height;
+        name = heroBuilderImpl.name;
+        weight = heroBuilderImpl.weight;
+        numWeapons = heroBuilderImpl.numWeapons;
+        surName = heroBuilderImpl.surName;
     }
 
-    public static class Builder{
-        private final String name;
-        private final String surName;
+    public static HeroBuilder getBuilder(){
+        return new HeroBuilderImpl();
+    }
+
+    public interface HeroBuilder{
+        HeroBuilder withHeight(Integer height);
+
+        HeroBuilder withWeight(Integer weight);
+
+        HeroBuilder withAge(Integer withAge);
+
+        HeroBuilder withNumWeapons(Integer numWeapons);
+
+        Hero build();
+    }
+
+    private static class HeroBuilderImpl implements HeroBuilder {
+        private  String name;
+        private  String surName;
         private  Integer height;
         private  Integer weight;
         private  Integer age;
         private  Integer numWeapons;
 
-        public Builder(String name,String surName){
+        public HeroBuilderImpl() {
+        }
+
+        public HeroBuilderImpl(String name, String surName){
             this.name =name;
             this.surName = surName;
         }
 
-        public Builder withHeight(Integer height){
+        @Override
+        public HeroBuilderImpl withHeight(Integer height){
             this.height = height;
             return this;
         }
 
-        public Builder withWeight(Integer weight){
+        @Override
+        public HeroBuilderImpl withWeight(Integer weight){
             this.weight = weight;
             return this;
         }
 
-        public Builder withAge(Integer withAge){
+        @Override
+        public HeroBuilderImpl withAge(Integer withAge){
             this.age = withAge;
             return this;
         }
 
-        public Builder withNumWeapons(Integer numWeapons){
+        @Override
+        public HeroBuilderImpl withNumWeapons(Integer numWeapons){
             this.numWeapons = numWeapons;
             return this;
         }
 
+        @Override
         public Hero build(){
             return new Hero(this);
         }

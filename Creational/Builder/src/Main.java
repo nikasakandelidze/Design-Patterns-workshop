@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        var hero = new Hero.Builder("Zoro","sakana")
-                           .withAge(12).withHeight(222).withNumWeapons(12)
-                           .withWeight(11).build();
-
+        Hero build = Hero.getBuilder()
+                .withHeight(12)
+                .withAge(10)
+                .withNumWeapons(1111)
+                .build();
+        build.
     }
 }
