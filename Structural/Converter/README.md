@@ -1,0 +1,2 @@
+# **General**
+In real worls scenarios it is often the case that database layer consists of entities that need to be mapped into DTOs for use on the business logic layer. Similar mapping is done for potentially huge amount of classes and we need a generic way to achieve this.
