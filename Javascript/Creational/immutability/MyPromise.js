@@ -19,19 +19,7 @@ class MyPromise{
         };
         error = error.bind(this);
         resolve = resolve.bind(this);
-        function tryToProcess(){
-            process.nextTick(async () => {
-                if(this.resolved && this.error === false){
-                    this.successCallback(this.resolvedValue);
-                }else if(this.error === true){
-                    this.failHandler();
-                }else{
-                    tryToProcess();
-                }
-            });
-        };
-        tryToProcess = tryToProcess.bind(this);
-        tryToProcess();
+        this._tryToProcess();
         executor(resolve, error);
     }
 
@@ -43,6 +31,18 @@ class MyPromise{
     failHandler(callback){
         this.failHandler = callback;
     }
+
+    _tryToProcess(){
+        process.nextTick(async () => {
+            if(this.resolved && this.error === false){
+                this.successCallback(this.resolvedValue);
+            }else if(this.error === true){
+                this.failHandler();
+            }else{
+                tryToProcess();
+            }
+        });
+    };
 }
 
 
