@@ -37,4 +37,8 @@ function customRequire(moduleName){
 
 //client code
 const module1 = customRequire('module1.js');
+const module2 = customRequire('module1.js');
+
+console.log(module1 === module2);
+
 console.log(module1.result);
