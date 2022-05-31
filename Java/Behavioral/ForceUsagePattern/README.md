@@ -1,0 +1,1 @@
+# This code snippet describes Force usage pattern also known as loan pattern. It is my favourite java functional style design pattern:)_
